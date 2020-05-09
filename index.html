@@ -8,23 +8,17 @@
     <title> Coding Quiz</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
     <div class="container">
         <nav>
-            <a class="navbar-brand" href="#">Coding Quiz</a>
-            <button type="button" data-target="#navbarSupportedContent" aria-label="Toggle navigation">
-                <span></span>
-            </button>
-
-            <div id="navbarSupportedContent">
-                <ul>
-                    <li class="nav-item">
-                        <div id="view-score">
-                            <a>View Highscore</a>
-                        </div>
-                    </li>
-                </ul>
+        <div>
+            <ul>
+            <li class="nav-item">
+            <div id="view-score">
+            <a>View Highscore</a>
+            </div>
+            </li>
+            </ul>
                 <form>
                     <ul>
                         <li class="nav-item">
@@ -55,17 +49,16 @@
                 <h2 id="question-title"></h2>
                 <ul id="button-answers"></ul>
             </div>
-            <div id="final-page">
+            <div id="score-page">
                 <div id="final-score"></div>
-                <div id="final-text">Game Over! Save your score below.</div>
+                <div id="score-text">Game Over! Save your score!</div>
                 <form id="input-form">
-                    Enter Initials:
+                    Enter Your Initials:
                     <input id="input-field" type="text"></input>
                 </form>
                 <button id="score-submit">Submit</button>
             </div>
         </div>
-    <div class="row margin-bottom">
         <div>
             <div id="response"></div>
             <div id="high-scores"></div>
@@ -74,8 +67,5 @@
     </div>
     <script src="questions.js"></script>
     <script src="script.js"></script>
-
-
 </body>
-
 </html>
