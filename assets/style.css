@@ -13,7 +13,7 @@ h1 {
     color: #f6b93b;
     font-size: 200px;;
 }
-#start-button, #score-submit, #clear-scores {
+#start-button, #score-submit {
     color: #494949 !important;
     text-transform: uppercase;
     text-decoration: none;
@@ -26,6 +26,19 @@ h1 {
     margin-left: 650px;
     margin-top: 40px;
     }
+#clear-scores {
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 40px;
+    }
 #go-back {
     color: #494949 !important;
     text-transform: uppercase;
@@ -36,7 +49,7 @@ h1 {
     display: inline-block;
     transition: all 0.4s ease 0s;
     position: absolute;
-    margin-left: 500px;
+    margin-left: 600px;
     margin-top: 40px;        
 }
 #go-back:hover {
@@ -88,4 +101,7 @@ h2 {
     font-size: 80px;
     color: #f6b93b;
     text-align: center;
+}
+#button-answers {
+    margin-left: 475px;
 }

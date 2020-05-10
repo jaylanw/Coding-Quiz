@@ -53,6 +53,7 @@ function setTime() {
         secondsLeft--;
         if (secondsLeft === 0 || questionsRemaining === 0 || questionsRemaining < 0) {
             clearInterval(timerInterval);
+            endQuiz();
         }
     }, 1000); startQuiz();
 }
@@ -91,7 +92,7 @@ function addQuestion() {
         var div = document.createElement("div")
         var choiceButton = document.createElement("button");
         index = i
-        choiceButton.setAttribute("class", "cButton", index);
+        choiceButton.setAttribute("id", index);
         choiceButton.innerHTML = questions[questionsIndex].choices[i];
         buttonAnswers.appendChild(div);
         div.appendChild(choiceButton);
@@ -124,7 +125,7 @@ function renderFinalPage() {
     var finalPageScore = document.getElementById("final-score");
     var finalPageSubmit = document.getElementById("score-submit");
     responseLine.innerHTML = "";
-    finalPageScore.innerHTML = "Score: " + score + " out of 5";
+    finalPageScore.innerHTML = "Score: " + score + " out of 4";
     finalPageSubmit.addEventListener("click", function (event) {
         event.preventDefault();
         var initialsText = document.getElementById("input-field").value
