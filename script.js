@@ -88,13 +88,13 @@ function checkQuestion() {
 function addQuestion() {
     questionTitle.innerHTML = questions[questionsIndex].title;
     for (var i = 0; i < questions[questionsIndex].choices.length; i++) {
-        var li = document.createElement("li")
+        var div = document.createElement("div")
         var choiceButton = document.createElement("button");
         index = i
-        choiceButton.setAttribute("id", index);
+        choiceButton.setAttribute("class", "cButton", index);
         choiceButton.innerHTML = questions[questionsIndex].choices[i];
-        buttonAnswers.appendChild(li);
-        li.appendChild(choiceButton);
+        buttonAnswers.appendChild(div);
+        div.appendChild(choiceButton);
     }
 }
 
@@ -138,7 +138,7 @@ function renderFinalPage() {
 highScore.addEventListener("click", viewHighScore);
 function viewHighScore() {
     finalPage.hidden = true;
-    hsList.innerHTML = "View Your High Scores";
+    hsList.innerHTML;
     for (var i = 0; i < finalList.initialsList.length; i++) {
         var initial = finalList.initialsList[i];
         var highScores = finalList.scoresList[i];

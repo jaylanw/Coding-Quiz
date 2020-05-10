@@ -1,7 +1,7 @@
 // Quiz Questions
 const questions = [
 {
-    title: "Who was not a president?",
+    title: "Who was NOT a president?",
     choices: ["Geroge W. Bush", "Abraham Lincoln", "Jimmy Hendrix"],
     answer: "Jimmy Hendrix"
 },{

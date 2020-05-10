@@ -6,13 +6,14 @@ body {
 }
 p{
     text-align: center;
+    margin-top: -80px;
 }
 h1 {
     text-align: center;
     color: #f6b93b;
     font-size: 200px;;
 }
-#start-button {
+#start-button, #score-submit, #clear-scores {
     color: #494949 !important;
     text-transform: uppercase;
     text-decoration: none;
@@ -23,8 +24,28 @@ h1 {
     transition: all 0.4s ease 0s;
     position: absolute;
     margin-left: 650px;
+    margin-top: 40px;
     }
-#start-button:hover {
+#go-back {
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 40px;        
+}
+#go-back:hover {
+    color: #ffffff !important;
+    background: #7e2828;
+    border-color: rgb(246, 185, 59) !important;
+    transition: all 0.4s ease 0s;
+}
+#start-button:hover, #score-submit:hover, #clear-scores:hover {
         color: #ffffff !important;
         background: #f6b93b;
         border-color: rgb(246, 185, 59) !important;
@@ -37,7 +58,7 @@ button {
     background: #ffffff;
     padding: 20px;
     border: 4px solid #494949 !important;
-    display: inline-block;
+    display: block;
     transition: all 0.4s ease 0s;
     }
 button:hover {
@@ -45,9 +66,26 @@ button:hover {
         background: #f6b93b;
         border-color: #f6b93b !important;
         transition: all 0.4s ease 0s;
-        }
+        }     
+
 h2 {
     font-size: 100px;
-    text-align: text;
+    text-align: center;
     color: #f6b93b;
+}
+#input-form{
+    text-align: center;
+    font-size: medium;
+}
+#input-field {
+    text-align: center;
+    color: black;
+}
+#highscore-list {
+    text-align: center;
+}
+#viewText {
+    font-size: 80px;
+    color: #f6b93b;
+    text-align: center;
 }
